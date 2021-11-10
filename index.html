@@ -7,6 +7,18 @@
     <title>Document</title>
 </head>
 <body>
+    <form>
+        <label for="cost" id="enterCost">Enter cost of meal:</label>
+        <input type="number" id="cost" min="1" step="any"/><br>
+        
+        <label for="tips">Enter your tip percentage:</label>
+        <input type="number" id="tip"/><br>
+
+        <form name="formname" onsubmit="return false"></form>
+        <input type="submit" value="Calculate total cost" onclick="tipCalculator()"><br>
+        <p>Total tip: <span id="tipTotal"></span></p><br>
+        <p>Total meal cost with tip: <span id="tCost"></span></p>
+    </form>
     <script src="script.js"></script>
 </body>
 </html>
