@@ -11,14 +11,13 @@ Define a variable that stores sum of tip amt and meal cost = total meal cost
 
 */
 
-let mealCost = document.getElementById("cost").value;
-let tip = document.getElementById("tip").value; 
-let tipValue = mealCost * (tip/100); //tip total amount
-let totalBill = mealCost + tipValue; //total meal cost with tip figured in
 
 function tipCalculator () {
+    let mealCost = Number(document.getElementById("cost").value);
+    let tip = Number(document.getElementById("tip").value); 
+    let tipValue = mealCost * (tip/100); //tip total amount
+    let totalBill = mealCost + tipValue; //total meal cost with tip figured in
+
     document.getElementById("tipTotal").innerHTML = `${tipValue}`;
     document.getElementById("tCost").innerHTML = `${totalBill}`;
-    console.log(tipValue);
-    console.log(totalBill);
 }
