@@ -13,8 +13,8 @@ Define a variable that stores sum of tip amt and meal cost = total meal cost
 
 
 function tipCalculator () {
-    let mealCost = Number(document.getElementById("cost").value);
-    let tip = Number(document.getElementById("tip").value); 
+    let mealCost = Number(document.getElementById("cost").value); //have to convert data type from string to a number so that the mealCost & tip can be calculated
+    let tip = Number(document.getElementById("tip").value); //converting data tye to number again so that tipValue and totalBill are numbers
     let tipValue = mealCost * (tip/100); //tip total amount
     let totalBill = mealCost + tipValue; //total meal cost with tip figured in
 
